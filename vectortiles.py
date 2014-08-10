@@ -112,7 +112,7 @@ class vectorTiles:
         for x in range(swxy[0], nexy[0]+1):
             for y in range(nexy[1], swxy[1]+1):
                 zxy = '%i-%i-%i.geojson' % (zoom, x, y)
-                QMessageBox.information (self.iface.mainWindow(), 'Debug', 'add'+zxy)
+                #QMessageBox.information (self.iface.mainWindow(), 'Debug', 'add'+zxy)
                 id = getLayerIDByName(zxy)
                 if id is not None:
                     tiles.append(id)
