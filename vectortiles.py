@@ -129,7 +129,7 @@ class vectorTiles:
                 #        continue
                 #tileLayer = QgsVectorLayer(tempfile, zxy, 'ogr')
                 
-                tileLayer = QgsVectorLayer('http://cyberjapandata.gsi.go.jp/xyz/experimental_rdcl/'+str(zoom)+'/'+str(x)+'/'+str(y)+'.geojson', zxy, 'ogr')
+                tileLayer = QgsVectorLayer('http://cyberjapandata.gsi.go.jp/xyz/experimental_dem5a/'+str(zoom)+'/'+str(x)+'/'+str(y)+'.geojson', zxy, 'ogr')
                 if not tileLayer.isValid():
                     continue
                 
